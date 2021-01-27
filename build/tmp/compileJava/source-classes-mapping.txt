@@ -1,0 +1,4 @@
+com/jkcoxson/camelmod/Camelmod.java
+ com.jkcoxson.camelmod.Camelmod
+com/jkcoxson/camelmod/client/CamelmodClient.java
+ com.jkcoxson.camelmod.client.CamelmodClient
