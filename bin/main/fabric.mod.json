@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "camelmod",
+  "version": "${version}",
+  "name": "CamelMod",
+  "description": "A companion mod to CamelBot",
+  "authors": [
+    "jkcoxson",
+    "sethb",
+    "jclinux"
+  ],
+  "contact": {
+    "website": "jkcoxson.com",
+    "repo": "https://github.com/jkcoxson/CamelMod"
+  },
+  "license": "MIT",
+  "icon": "assets/camelmod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.jkcoxson.camelmod.client.CamelmodClient"
+    ],
+    "main": [
+      "com.jkcoxson.camelmod.Camelmod"
+    ]
+  },
+  "mixins": [
+    "camelmod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.1",
+    "fabric": "*",
+    "minecraft": "1.16.5"
+  }
+}
