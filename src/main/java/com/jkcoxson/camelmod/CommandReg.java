@@ -13,6 +13,7 @@ import java.util.*;
 import java.io.InputStream;
 import java.io.ByteArrayInputStream;
 import java.nio.charset.StandardCharsets;
+import com.jkcoxson.camelmod.tcamelp;
 
 public class CommandReg {
     static final MutableObject<MinecraftServer> serverReference = new MutableObject<MinecraftServer>();
@@ -26,6 +27,7 @@ public class CommandReg {
                 InputStream i = new ByteArrayInputStream(str.getBytes(StandardCharsets.UTF_8));
                 System.setIn(i);  
                 return 1;
+
             }));
         });
         return 0;

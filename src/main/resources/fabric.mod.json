@@ -5,9 +5,7 @@
   "name": "CamelMod",
   "description": "A companion mod to CamelBot",
   "authors": [
-    "jkcoxson",
-    "sethb",
-    "jclinux"
+    "jkcoxson"
   ],
   "contact": {
     "website": "jkcoxson.com",
