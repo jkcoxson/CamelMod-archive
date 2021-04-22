@@ -29,6 +29,12 @@ public class CommandReg {
                 return 1;
 
             }));
+
+            dispatcher.register(CommandManager.literal("uncamel").executes(context -> {
+                tcamelp.Disconnect();
+                return 1;
+
+            }));
         });
         return 0;
     }

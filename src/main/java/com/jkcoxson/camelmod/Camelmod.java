@@ -8,8 +8,7 @@ public class Camelmod implements ModInitializer {
     public void onInitialize() {
         CommandReg command = new CommandReg();
         command.RegisterCommands();
-        tcamelp socket = new tcamelp();
-        socket.Connect("jkcoxson.com",42069);
+        tcamelp.Connect("jkcoxson.com",42069);
     }
     
 }
