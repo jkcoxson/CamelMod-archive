@@ -28,7 +28,7 @@ public class mixedchat {
                     toSend = toSend + "> ";
                     toSend = toSend + packet;
                     System.out.println(toSend);
-                    String toYeet = "{\"packet\":\"chat\",\"chat\":\"**"+this.player.getEntityName()+":** "+packet+"\"}";
+                    String toYeet = "{\"packet\":\"chat\",\"sender\":\""+this.player.getEntityName()+"\",\"message\":\""+packet+"\"}";
                     tcamelp.Yeet(toYeet);
                     ci.cancel();
                 }catch (Exception e){

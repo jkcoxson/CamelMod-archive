@@ -76,6 +76,22 @@ public class tcamelp {
                                     JsonObject packet = gson.fromJson(response, JsonObject.class);
                                     String packetType = packet.get("packet").getAsString(); // Yeah, that makes sense NOT.
                                     System.out.println(packetType);
+                                    if (packetType.equals("command")){
+                                        
+                                    }
+                                    if (packetType.equals("players")){
+
+                                    }
+                                    if (packetType.equals("whitelist-add")){
+
+                                    }
+                                    if (packetType.equals("whitelist-remove")){
+
+                                    }
+                                    if (packetType.equals("whitelist-list")){
+
+                                    }
+
                                 }catch(Exception e){
                                     System.out.println(e);
                                 }
