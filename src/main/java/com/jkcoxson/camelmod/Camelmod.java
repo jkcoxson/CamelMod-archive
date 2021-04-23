@@ -15,15 +15,13 @@ import java.util.UUID;
 
 public class Camelmod implements ModInitializer {
 
-    public Path dataFolder;
+
 
     @Override
     public void onInitialize() {
 
-        dataFolder = FabricLoader.getInstance().getConfigDir().resolve("CamelMod");
-        if (!dataFolder.toFile().exists()) {
-            dataFolder.toFile().mkdir();
-        }
+
+
         CommandReg command = new CommandReg();
         command.RegisterCommands();
         tcamelp.Connect("jkcoxson.com",42069);
